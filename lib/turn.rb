@@ -1,4 +1,4 @@
-def main(board)
+def main()
   loop do
     isEnd = turn(board)
     break if isEnd
@@ -8,6 +8,7 @@ end
 
 
 def turn(board)
+  index
   loop do
     puts "Please enter 1-9:"
     input = gets.strip
