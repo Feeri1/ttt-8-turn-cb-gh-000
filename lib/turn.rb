@@ -1,5 +1,9 @@
-
-
+def main()
+  loop do
+    isEnd = turn(board)
+    break if isEnd
+  end
+end
 
 def turn(board)
   index = nil
