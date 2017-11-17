@@ -3,6 +3,7 @@ def main()
     isEnd = turn(board)
     break if isEnd
   end
+end
 
 
 
@@ -12,10 +13,11 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
     break if valid_move?(board, index) == true
-    end
-      move(board, index)
-      display_board(board)
   end
+  move(board, index)
+  display_board(board) 
+  return true 
+end
 
 
 def display_board(board)
