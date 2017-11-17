@@ -8,7 +8,7 @@ end
 
 
 def turn(board)
-  index = 0
+  index = nil
   loop do
     puts "Please enter 1-9:"
     input = gets.strip
