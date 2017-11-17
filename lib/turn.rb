@@ -15,8 +15,8 @@ def turn(board)
     break if valid_move?(board, index) == true
   end
   move(board, index)
-  display_board(board) 
-  return true 
+  display_board(board)
+  return true
 end
 
 
