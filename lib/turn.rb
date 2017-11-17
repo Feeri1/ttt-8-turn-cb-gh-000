@@ -1,4 +1,4 @@
-def main()
+def main(board)
   loop do
     isEnd = turn(board)
     break if isEnd
