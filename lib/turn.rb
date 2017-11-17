@@ -1,25 +1,22 @@
-#def turn(board)
-#  loop do
-#    puts "Please enter 1-9:"
-#    input = gets.strip
-#    index = input_to_index(input)
-#    break if valid_move?(board, index) == true
-#      move(board, index)
-#      display_board(board)
-#    end
-#  end
-#end
-def turn(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index)
-    move(board, index)
-    display_board(board)
-  else
-    turn(board)
+def main()
+  loop do
+    isEnd = turn(board)
+    break if isEnd
   end
-end
+
+
+
+def turn(board)
+  loop do
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    break if valid_move?(board, index) == true
+    end
+      move(board, index)
+      display_board(board)
+  end
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
